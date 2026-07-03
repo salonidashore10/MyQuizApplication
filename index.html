@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="box">
+      <div id="first" class="boxes">
+        <span>🏆</span><br /><br />
+        <h1 id="head1">Do you want to play a Quiz Game 😍👇</h1>
+        <br />
+        <button id="yesBtn">YES</button>
+      </div>
+
+      <div id="second" class="boxes">
+        <h1 id="head2"><span>📋</span> Here are some instructions 👇</h1>
+        <br /><br />
+
+        <div class="instruction-list">
+          <div class="item">
+            <span>1</span>
+            <p>Click the Start Quiz button to begin the quiz.</p>
+          </div>
+
+          <div class="item">
+            <span>2</span>
+            <p>Read each question carefully before selecting an answer.</p>
+          </div>
+
+          <div class="item">
+            <span>3</span>
+            <p>Select only one option for each question.</p>
+          </div>
+
+          <div class="item">
+            <span>4</span>
+            <p>Click the Next button to move to the next question.</p>
+          </div>
+
+          <div class="item">
+            <span>5</span>
+            <p>Once an answer is selected, it cannot be changed.</p>
+          </div>
+
+          <div class="item">
+            <span>6</span>
+            <p>Complete all questions to view the final score.</p>
+          </div>
+
+          <div class="item">
+            <span>7</span>
+            <p>Click Check Score after completing all questions.</p>
+          </div>
+
+          <div class="item">
+            <span>8</span>
+            <p>Restart Quiz if you want to play again.</p>
+          </div>
+
+          <div class="item">
+            <span>9</span>
+            <p>Do not refresh the page during the quiz.</p>
+          </div>
+
+          <div class="item">
+            <span>10</span>
+            <p>Ensure a stable internet connection.</p>
+          </div>
+        </div>
+
+        <div id="nextBtndiv">
+          <button id="nextBtn" class="btn">Next ➡️</button>
+        </div>
+      </div>
+
+      <div id="selectLang" class="container" style="display: none">
+        <div class="language-box">
+          <div class="title">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/8146/8146486.png"
+            />
+            <h2>Select any Language</h2>
+          </div>
+
+          <button class="lang-btn" id="Lang1">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png"
+              />
+              <span>C</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="lang-btn" id="Lang2">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png"
+              />
+              <span>C++</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="lang-btn" id="Lang3">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
+              />
+              <span>Java</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="lang-btn" id="Lang4">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+              />
+              <span>Python</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="lang-btn" id="Lang5">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+              />
+              <span>HTML</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="lang-btn" id="Lang6">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+              />
+              <span>CSS</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="lang-btn" id="Lang7">
+            <div class="left">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+              />
+              <span>JavaScript</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="container" id="third">
+        <div class="quiz-box">
+          <div class="heading">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+            />
+
+            <h2>Select Quiz Type</h2>
+          </div>
+
+          <button class="quiz-btn basic" id="1">
+            <div class="left">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Basic Quiz</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="quiz-btn intermediate" id="2">
+            <div class="left">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Intermediate Quiz</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="quiz-btn advanced" id="3">
+            <div class="left">
+              <i class="fa-solid fa-rocket"></i>
+              <span>Advanced Quiz</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="fourth" class="boxes">
+        <h1>Quizzes</h1>
+        <br />
+        <div id="ques"></div>
+        <div id="options"></div>
+        <br />
+        <div id="btns">
+          <button id="prevQuesBtn" class="btn">⬅️ Previous Question</button>
+          <button id="nextQuesBtn" class="btn">➡️ Next Question</button>
+        </div>
+      </div>
+
+      <div id="submit" class="submitButton" style="display: none;">
+        <span id="sym">🏆</span><br>
+        <div id="inner">
+          <span id="track"></span><br><br>
+          <h2 id="cont"></h2>
+        </div>
+      </div>
+      <div id="score" class="checkScore"></div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
