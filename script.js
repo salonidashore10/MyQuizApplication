@@ -269,8 +269,8 @@ submitBtn.addEventListener("click", () => {
     // submit.innerText = `Your response has been recorded !`;
     content.innerText = `Your response has been recorded !`;
     tracker.innerHTML=`${count} / ${currentQuiz.length}`;
-    submit.removeChild(OKbtn);
     submit.appendChild(checkScore);
+    submit.removeChild(OKbtn);
   }
 });
 
